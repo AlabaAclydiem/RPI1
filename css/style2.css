@@ -4,152 +4,180 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    display: flex;
 
     width: 100%;
-    height: auto;
-    text-align: center;
+    height: fit-content;
+    text-align: right;
     padding-top: 100px;
     padding-bottom: 101px;
 }
 .ingridients_text
 {
-  box-sizing: border-box;
-  border: 12%;
-  height: fit-content;
-
-  display: block;
-  align-items: center;
+  display: inline-block;
+  vertical-align: middle;
   text-align: center;
   color: white;
-  
-  position: relative;
-  margin-left: 50.1%;
-  width: 38%;
-  background-color : rgba(0, 0, 0, 0.5);
-  
+  padding: 0px 70px 65px 70px;
+  max-width: 430px;
+  width: 50%;
+  background-color : rgba(0, 0, 0, 0.7);
 }
 
-.ingridients_text h1
-{
-  padding-top: 70px;
-  font-size: 36px;
-  font-family: 'Yeseva One';
+.ingridients_fake {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 215px;
+  width: 5%;
+  min-width: 30px;
+  height: 557px;
 }
-.ingridients_text .divider
-{
-  padding: 15px 0px 30px 0px;
-}
+
 .ingridients p
 {
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-bottom: 75px;
+  padding-bottom: 30px;
+  margin-top: 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: white; 
+  font-weight: lighter; 
+  line-height: 120%;
 }
+
+.ingridients_text h6
+{
+  padding-top: 70px;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-family: 'Yeseva One', cursive;
+  font-weight: lighter;
+}
+
 
 .ingridients_images 
 {
   justify-content: center;
   flex-wrap: wrap;
   vertical-align: middle;
-  
-  margin-left: 15px;
-  padding-bottom: 75px;
+  padding-bottom: 10px;
+  margin: 0px 10px 0px 10px
 }
 
 .menu
 { 
-    background-image: url(../images/pattern1.png)  ;
+    background-image: url(../images/pattern1.png),
+                      url(../images/background.png);
     background-attachment: scroll;
     background-repeat: repeat;
-    display: flex;
-    
+    background-size: cover;
 
-    flex-direction: column!important;
-    justify-content: center!important;
+    padding: 100px 0px 100px 0px;
+    text-align: center;
     width: 100%;
-    height: auto;
-    
-}
-.menu_whole{
-  box-sizing: border-box;
-  padding: 0px 12.5% 100px 12.5%;
-  
-  height: 100%;
+    height: fit-content;
 }
 
-.menu_whole_left
-{
-  vertical-align: top;
-  text-align: center;
+.menu_half {
   display: inline-block;
-  height: 100%;
-  margin-bottom: 80px;
-  width: 430px;
-  padding-left: 5.31%;
-  padding-right: 5.31%;
-}
-
-.menu_whole_right
-{ 
-  vertical-align: top;
+  vertical-align: middle;
+  max-width: 460px;
+  width: 50%;
+  height: fit-content;
   text-align: center;
-  display: inline-block;
-  height: 100%;
-  width: 430px;
-  padding-left: 5.31%;
-  padding-right: 5.31%;
+  margin: 0px 15px 0px 15px;
+  padding: 0px 55px 0px 55px;
 }
 
-.menu_group
-{
-  font-weight: normal;
-  
-  font-family: 'Yeseva One';
-  margin-top: 100px;
-  width: 430px;
+.menu_part {
+  width: 100%;
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.menu_group .menu_header
-{
-  align-items: center;
+
+.menu_header {
   text-align: center;
-
-  margin-bottom: 10px;
-
-  font-family: 'Yeseva One';
-  font-size: 36px;
-  color: #cc9900;
-}
-.menu_header p
-{
-  margin-bottom: 5px;
+  max-width: 460px;
+  width: 100%;
+  height: fit-content; 
 }
 
-.menu_item table
-{
-  font-family: 'Yeseva';
-  font-size: 26px;
-  font-weight: bold;
-  color: #cc9900;
-  width: 430px;
-}
-
-.menu_item p
-{
-  text-align: left;
-  font-size: 13px;
-}
-.menu_group .menu_txt_left
-{
-  text-align: left;
-}
-.menu_group .menu_txt_right
-{
+.menu_spec {
+  max-width: 460px;
+  width: 100%;
+  height: fit-content;
   text-align: right;
 }
 
-@media screen and (max-width: 950px){
-  .ingridients_images {
-        display: none;
+.menu_spec_content {
+  background-color: #cdaa46;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  width: 70px;
+  height: 20px;
+}
+
+.menu_content {
+  padding-top: 10px;
+  border: 1px solid #cdaa46;
+}
+
+.menu_content_upper {
+  max-width: 460px;
+  width: 100%;
+  height: fit-content;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: 'Yeseva One', cursive;
+  color: #cc9900;
+}
+
+.menu_name {
+  width: 48%;
+  display: inline-block;
+  height: fit-content;
+  text-align: left;
+}
+
+.menu_price {
+  width: 48%;
+  display: inline-block;
+  height: fit-content;
+  text-align: right;
+}
+
+.menu_line {
+  max-width: 460px;
+  width: 100%;
+  height: fit-content;
+  vertical-align: center;
+}
+
+@media screen and (max-width: 900px){
+  .menu_line {
+     display: none;
   }
+
+}
+
+.menu_content_lower {
+  max-width: 460px;
+  width: 100%;
+  padding: 10px;
+}
+
+.menu_text {
+  font-size: 16px; 
+  font-family: 'Lato', sans-serif; 
+  font-weight: lighter;
+  text-align: left;
+}
+
+.nonborder {
+  border: 0px;
+}
+
+.nonvisible {
+  visibility: hidden;
 }

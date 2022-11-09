@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>A Frog and two Cats</title>
+        <title>Lambda Restaurant</title>
         <meta charset="UTF-8">    
         <link rel="stylesheet" href="css/iconsfont.css">
         <link rel="stylesheet" href="css/style.css">
@@ -21,13 +21,13 @@
                     <nav>
                         <a href="#promo" class="text">Home</a>
                         <a href="#about" class="text">About</a>
-                        <a href="" class="text">Ingredients</a>
+                        <a href="#ingridients" class="text">Ingredients</a>
                         <a href="#reviews" class="text">Reviews</a>
-                        <a href="" class="text">Menu</a>
+                        <a href="#menu" class="text">Menu</a>
                         <a href="#reservations" class="text">Reservations</a>
-                        <a href="" id="twitter"  class="fa-brands fa-twitter icon"></a>
-                        <a href="" id="youtube"  class="fa-brands fa-youtube icon"></a>
-                        <a href="" id="facebook" class="fa-brands fa-facebook-f icon"></a>
+                        <a href="https://twitter.com/?lang=ru" target="_blank" id="twitter"  class="fa-brands fa-twitter icon"></a>
+                        <a href="https://www.youtube.com/" target="_blank" id="youtube"  class="fa-brands fa-youtube icon"></a>
+                        <a href="https://www.facebook.com/" target="_blank" id="facebook" class="fa-brands fa-facebook-f icon"></a>
                     </nav>
                 </div>
             </div>
@@ -40,8 +40,8 @@
                     </div>
                     <div class="line"><img src="images\Decoration.png" alt=""></div>
                     <div class="buttons">
-                        <a href="" class="button_left button_property">BOOK A TABLE</a>
-                        <a href="" class="button_right button_property">SEE THE MENU</a>
+                        <a href="#reservations" class="button_left button_property">BOOK A TABLE</a>
+                        <a href="#menu" class="button_right button_property">SEE THE MENU</a>
                     </div>
                 </div>
             </section>
@@ -60,137 +60,205 @@
                     </div>
                 </div>
             </section>
-            <section class="ingridients" >
+            <section class="ingridients" id="ingridients">
+                <div class="ingridients_fake"></div>
                 <div class="ingridients_text">
-                    <h1>Fine ingridients</h1>
+                    <h6>Fine ingridients</h6>
                     <img src="images/Divider2.png" class="divider">
-                    <p>If you've been to one of our restaurants, you've seen – and<br>tasted – what keeps our customers coming back for more.<br>Perfect materials and freshly baked food, delicious Lambda<br>cakes,  muffins, and gourmet coffees make us hard to resist!<br>Stop in today and check us out!
-                    </p>
+                    <p>If you've been to one of our restaurants, you've seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
                     <div >
                         <img src="images/image.png" class="ingridients_images">
                         <img src="images/image2.png" class="ingridients_images">
                         <img src="images/image3.png" class="ingridients_images">
                     </div>
                 </div>
-                
+                <div class="ingridients_fake"></div>      
             </section>
-            <section class="menu">
-                <div class="menu_whole">
-                    <div class="menu_whole_left">
-                        <div class="menu_group">       <!--1-->
-                            <div class="menu_header">  
-                                <p>Appetisers</p>
-                                <img src="images/Divider.png"> 
+            <section class="menu" id="menu">
+                    <div class="menu_half">
+                        <div class="menu_part">
+                            <div class="menu_header">
+                                <h6 style="font-size: 36px; font-family: 'Yeseva One', cursive; color: #cc9900; font-weight: lighter;">Appertisers</h6>
+                                <div style="margin-top: 15px"><img src="images\Divider.png" alt="" style="max-width: 240px; width: 100%"></div>
                             </div>
-                            <div class="menu_item">             <!--1.1-->
-                                <table>
-                                    <td class="menu_txt_left" >Tzusiki</td>  <td class="menu_txt_right">$3.99</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec nonvisible"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content nonborder">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Tzatsiki</p>
+                                        <p class="menu_price">$3.99</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="menu_item">             <!--1.2-->
-                                <table>
-                                    <td class="menu_txt_left" >Aubergine Salad</td>  <td class="menu_txt_right">$5.50</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec nonvisible"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content nonborder">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Aurbergine Salad</p>
+                                        <p class="menu_price">$5.50</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="menu_item">             <!--1.3-->
-                                <table>
-                                    <td class="menu_txt_left" >Aubergine Salad</td>  <td class="menu_txt_right">$3.99</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec nonvisible"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content nonborder">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Aurbergine Salad</p>
+                                        <p class="menu_price">$5.25</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="menu_group">      <!--2-->
+                        <div class="menu_part">
                             <div class="menu_header">
-                                <p>Salads</p>
-                                <img src="images/Divider.png"> 
+                                <h6 style="font-size: 36px; font-family: 'Yeseva One', cursive; color: #cc9900; font-weight: lighter;">Salads</h6>
+                                <div style="margin-top: 15px"><img src="images\Divider.png" alt="" style="max-width: 240px; width: 100%"></div>
                             </div>
-                            <div class="menu_item">     <!--2.1-->
-                                <table>
-                                    <td class="menu_txt_left" >Olive Special</td>  <td class="menu_txt_right">$3.99</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec nonvisible"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content nonborder">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Olive Special</p>
+                                        <p class="menu_price">$5.99</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="menu_item">     <!--2.2-->
-                                <table>
-                                    <td class="menu_txt_left" >Greek Salad</td>  <td class="menu_txt_right">$2.50</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Greek Salad</p>
+                                        <p class="menu_price">$5.50</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="menu_item">     <!--2.3-->
-                                <table>
-                                    <td class="menu_txt_left" >Gusto Salad</td>  <td class="menu_txt_right">$4.99</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec nonvisible"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content nonborder">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Gusto Salad</p>
+                                        <p class="menu_price">$5.25</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="menu_whole_right">
-                        <div class="menu_group">     <!--3-->
+                    <div class="menu_half">
+                        <div class="menu_part">
                             <div class="menu_header">
-                                <p>Starters</p>
-                                <img src="images/Divider.png"> 
+                                <h6 style="font-size: 36px; font-family: 'Yeseva One', cursive; color: #cc9900; font-weight: lighter;">Starters</h6>
+                                <div style="margin-top: 15px"><img src="images\Divider.png" alt="" style="max-width: 240px; width: 100%"></div>
                             </div>
-                            <div class="menu_item">    <!--3.1-->
-                                <table>
-                                    <td class="menu_txt_left" >Haloumi</td>  <td class="menu_txt_right">$3.99</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec nonvisible"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content nonborder">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Haloumi</p>
+                                        <p class="menu_price">$3.99</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="menu_item">    <!--3.2-->
-                                <table>
-                                    <td class="menu_txt_left" >Spinach Pie</td>  <td class="menu_txt_right">$3.99</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec nonvisible"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content nonborder">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Spinach Pie</p>
+                                        <p class="menu_price">$5.50</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="menu_group">     <!--4-->
+                        <div class="menu_part">
                             <div class="menu_header">
-                                <p>Main Dishes</p>
-                                <img src="images/Divider.png"> 
+                                <h6 style="font-size: 36px; font-family: 'Yeseva One', cursive; color: #cc9900; font-weight: lighter;">Main Dishes</h6>
+                                <div style="margin-top: 15px"><img src="images\Divider.png" alt="" style="max-width: 240px; width: 100%"></div>
                             </div>
-                            <div class="menu_item">   <!--4.1-->
-                                <table>
-                                    <td class="menu_txt_left" >Cornish Mackerel</td>  <td class="menu_txt_right">$3.99</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec nonvisible"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content nonborder">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Cornish Mackerel</p>
+                                        <p class="menu_price">$5.99</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="menu_item">   <!--4.2-->
-                                <table>
-                                    <td class="menu_txt_left" >Roast Lamb</td>  <td class="menu_txt_right">$3.99</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Roast Lamb</p>
+                                        <p class="menu_price">$5.50</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="menu_item">   <!--4.3-->
-                                <table>
-                                    <td class="menu_txt_left" >Fried Chicken</td>  <td class="menu_txt_right">$3.99</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec nonvisible"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content nonborder">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Fried Chicken</p>
+                                        <p class="menu_price">$5.25</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="menu_item">   <!--4.4-->
-                                <table>
-                                    <td class="menu_txt_left" >Pastitsio</td>  <td class="menu_txt_right">$3.99</td>
-                                </table>
-                                <img src="images/line.png">
-                                <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <div class="menu_element">
+                                <div class="menu_spec nonvisible"><div class="menu_spec_content"><p style="font-size: 16px; font-family: 'Lato', sans-serif; font-weight: lighter;">Special</p></div></div>
+                                <div class="menu_content nonborder">
+                                    <div class="menu_content_upper">
+                                        <p class="menu_name">Pastitsio</p>
+                                        <p class="menu_price">$5.99</p>
+                                    </div>
+                                    <div class="menu_line"><img src="images\line.png" alt=""></div>
+                                    <div class="menu_content_lower">
+                                        <p class="menu_text">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
             <section class="reviews" id="reviews">
                 <div class="gdiv">
@@ -263,19 +331,19 @@
                 <h6>Opening Hours</h6>
                 <div style="padding: 20px 0px 24px 0px"><img src="images/Divider2.png" alt="" style="height: 20px; width: 200px"></div>
                 <p><b>Mon-Thu:</b> 7:00am-8:00pm<br><b>Fri-Sun:</b> 7:00am-10:00pm</p>
-                <a href="" class="fa-brands fa-cc-mastercard ficon"></a>
-                <a href="" class="fa-brands fa-cc-visa ficon"></a>
-                <a href="" class="fa-brands fa-cc-paypal ficon"></a>
-                <a href="" class="fa-brands fa-cc-discover ficon"></a>
+                <a href="https://www.mastercard.us/en-us.html" target="_blank" class="fa-brands fa-cc-mastercard ficon"></a>
+                <a href="https://usa.visa.com/" target="_blank" class="fa-brands fa-cc-visa ficon"></a>
+                <a href="https://www.paypal.com/" target="_blank" class="fa-brands fa-cc-paypal ficon"></a>
+                <a href="https://www.discover.com/" target="_blank" class="fa-brands fa-cc-discover ficon"></a>
             </div>
             <div class="fdiv">
                 <h6>Our Location</h6>
                 <div style="padding: 20px 0px 24px 0px"><img src="images/Divider2.png" alt="" style="height: 20px; width: 200px"></div>
                 <p><b>19th Paradise Street Sitia<br>128 Meserole Avenue</b></p>
-                <a href="" class="fa-brands fa-facebook-f ficon"></a>
-                <a href="" class="fa-brands fa-youtube ficon"></a>
-                <a href="" class="fa-brands fa-twitter ficon"></a>
-                <a href="" class="fa-brands fa-trello ficon"></a>
+                <a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-facebook-f ficon"></a>
+                <a href="https://www.youtube.com/" target="_blank" class="fa-brands fa-youtube ficon"></a>
+                <a href="https://twitter.com/?lang=ru" target="_blank" class="fa-brands fa-twitter ficon"></a>
+                <a href="https://trello.com/" target="_blank" class="fa-brands fa-trello ficon"></a>
             </div>
         </footer>
     </body>
