@@ -32,7 +32,7 @@
   height: 557px;
 }
 
-.ingridients p
+.ingridients_paragraph
 {
   padding-bottom: 30px;
   margin-top: 25px;
@@ -43,7 +43,7 @@
   line-height: 120%;
 }
 
-.ingridients_text h6
+.ingredients_header
 {
   padding-top: 70px;
   margin-bottom: 15px;
@@ -101,6 +101,22 @@
   height: fit-content; 
 }
 
+.menu_header_text {
+  font-size: 36px; 
+  font-family: 'Yeseva One', cursive; 
+  color: #cc9900; 
+  font-weight: lighter;
+}
+
+.menu_header_divider {
+  margin-top: 15px;
+}
+
+.menu_divider {
+  max-width: 240px; 
+  width: 100%;
+}
+
 .menu_spec {
   max-width: 460px;
   width: 100%;
@@ -116,6 +132,12 @@
   color: white;
   width: 70px;
   height: 20px;
+}
+
+.menu_spec_text {
+  font-size: 16px; 
+  font-family: 'Lato', sans-serif; 
+  font-weight: lighter;
 }
 
 .menu_content {
