@@ -1,19 +1,33 @@
-.ingridients
+.ingredients
 { 
     background-image: url(../images/bg5.png) ;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 
+    display: flex;
+    flex-basis: auto;  
+    
     width: 100%;
-    height: fit-content;
-    text-align: right;
+    justify-content: center;
     padding-top: 100px;
     padding-bottom: 101px;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
-.ingridients_text
+
+.ing_flex{
+  display: flex;
+  flex-basis: 80%;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+.ingredients_text
 {
-  display: inline-block;
+  position: relative;
+  display: inline-block; 
   vertical-align: middle;
   text-align: center;
   color: white;
@@ -23,16 +37,7 @@
   background-color : rgba(0, 0, 0, 0.7);
 }
 
-.ingridients_fake {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 215px;
-  width: 5%;
-  min-width: 30px;
-  height: 557px;
-}
-
-.ingridients_paragraph
+.ingredients_paragraph
 {
   padding-bottom: 30px;
   margin-top: 25px;
@@ -53,7 +58,7 @@
 }
 
 
-.ingridients_images 
+.ingredients_images 
 {
   justify-content: center;
   flex-wrap: wrap;
@@ -76,76 +81,66 @@
     height: fit-content;
 }
 
-.menu_half {
+.m_half {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   max-width: 460px;
   width: 50%;
   height: fit-content;
   text-align: center;
-  margin: 0px 15px 0px 15px;
+  margin: 0 15px 50px 15px;
   padding: 0px 55px 0px 55px;
 }
 
-.menu_part {
-  width: 100%;
-  height: fit-content;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.menu_header {
+.m_hder {
   text-align: center;
   max-width: 460px;
   width: 100%;
   height: fit-content; 
 }
 
-.menu_header_text {
+.m_hder_txt {
+  margin-top: 50px;
   font-size: 36px; 
   font-family: 'Yeseva One', cursive; 
   color: #cc9900; 
   font-weight: lighter;
 }
 
-.menu_header_divider {
+.m_div {
+  max-width: 240px; 
+  width: 100%;
   margin-top: 15px;
 }
 
-.menu_divider {
-  max-width: 240px; 
-  width: 100%;
-}
-
-.menu_spec {
+.m_spc {
   max-width: 460px;
   width: 100%;
-  height: fit-content;
+  height: 20px;
   text-align: right;
 }
 
-.menu_spec_content {
+.m_spc_txt {
+  
+  font-size: 16px; 
+  font-family: 'Lato', sans-serif; 
+  font-weight: lighter;
+
   background-color: #cdaa46;
-  text-align: center;
-  display: inline-block;
   vertical-align: middle;
   color: white;
   width: 70px;
   height: 20px;
+
+  display: inline-table;
+  text-align: center;
 }
 
-.menu_spec_text {
-  font-size: 16px; 
-  font-family: 'Lato', sans-serif; 
-  font-weight: lighter;
+.m_cnt {
+  padding-top: 30px;
 }
 
-.menu_content {
-  padding-top: 10px;
-  border: 1px solid #cdaa46;
-}
-
-.menu_content_upper {
+.m_cnt_up {
   max-width: 460px;
   width: 100%;
   height: fit-content;
@@ -155,51 +150,49 @@
   color: #cc9900;
 }
 
-.menu_name {
+.m_name {
   width: 48%;
   display: inline-block;
   height: fit-content;
   text-align: left;
 }
 
-.menu_price {
+.m_price {
   width: 48%;
   display: inline-block;
   height: fit-content;
   text-align: right;
 }
 
-.menu_line {
-  max-width: 460px;
+.m_line {
+  max-width: 430px;
   width: 100%;
   height: fit-content;
   vertical-align: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 900px){
-  .menu_line {
+  .m_line {
      display: none;
   }
 
 }
 
-.menu_content_lower {
+.m_cnt_dwn {
   max-width: 460px;
   width: 100%;
   padding: 10px;
 }
 
-.menu_text {
+.m_txt {
   font-size: 16px; 
   font-family: 'Lato', sans-serif; 
   font-weight: lighter;
   text-align: left;
 }
 
-.nonborder {
-  border: 0px;
-}
-
-.nonvisible {
-  visibility: hidden;
+.spc {
+  border: 1px solid #cdaa46;
+  padding-top: 10px;
 }
